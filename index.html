@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeLab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-menu">
+            <img class="logo" src="/codelab/image/logo.png" alt="Logo" srcset="">
+            <div class="contents">
+                <div class="bars-mobile navbar-font-icon" onclick="showMenu()"><i class="fa-solid fa-bars"></i></div>
+                <ul class="nav-content">
+                    <li><a href="#">Conhecer</a></li>
+                    <li><a href="#">Telegram</a></li>
+                    <li><a href="#">Conteúdos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="overlay-back"></div>
+    <div class="nav-menu-mobile">
+        <div class="menu-mobile">
+            <p>Gema</p>
+            <div class="navbar-font-icon" onclick="closeMenu()"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <hr>
+        <ul class="nav-content-mobile">
+            <li><a href="#">Conhecer</a></li>
+            <li><a href="#">Telegram</a></li>
+            <li><a href="#">Conteúdos</a></li>
+        </ul>
+    </div>
+
+
+    <section class="overlay-bg-azul padding-banner padding-usp-icmc">
+        <div class="fundo-image" style="background-image: url('/codelab/image/binario.png');"></div>
+        <div class="container position-relative text-branco">
+            <div class="row-banner">
+                <div class="texto-banner col-6">
+                    <h1 class="margin-bottom-text">O Grupo de Programação Competitiva da USP.</h1>
+                    <p>Quer aprender os algoritmos mais avançados e ganhar medalhas? Cola com a gente!</p>
+                    <a href="#" class="btn btn-amarelo">Conhecer</a>
+                    <div class="usp-icmc">
+                        <img src="/codelab/image/usp.png" alt="">
+                        <img src="/codelab/image/icmc.png" alt="">
+                    </div>
+                </div>
+                <div class="imagem-banner col-6">
+                    <img class="balao desce-balao" src="/codelab/image/balao.png" alt="">
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+    <section class="overlay-bg-bege">
+        <div class="fundo-image" style="background-image: url('/codelab/image/gema.png');"></div>
+        <div class="container position-relative">
+            <div class="row-quem">
+                <div class="texto-quem">
+                    <h2 class="margin-bottom-text font-title">Quem somos?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget hendrerit felis, eget commodo
+                        tortor. Praesent eu arcu in lacus sagittis maximus. In hac habitasse platea dictumst. Maecenas
+                        varius purus at lacus luctus ullamcorper. Duis consectetur sem eros, id finibus enim gravida
+                        eget. Ut dapibus, metus sed tempor rutrum, urna nibh efficitur felis, ac ultrices nibh leo vel
+                        nisl. Suspendisse eget velit gravida, rutrum lorem a, maximus elit. Nulla in elementum ligula.
+                    </p>
+                </div>
+                <div class="imagem-quem">
+                    <img class="quem-1" src="/codelab/image/quem1.png" alt="">
+                    <img class="quem-2" src="/codelab/image/quem2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="overlay-bg-azul">
+        <div class="fundo-image" style="background-image: url('/codelab/image/binario.png');"></div>
+        <div class="container position-relative text-branco">
+            <div class="row text-center">
+                <h2 class="margin-bottom-text font-title">Gema na mídia</h2>
+                <p class="text-bege">Vejam o que andam falando do GEMA!</p>
+            </div>
+        </div>
+        <div class="container-slider position-relative text-branco">
+            <div class="slider">
+                <div class="slider-prev"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="slider-next"><i class="fa-solid fa-angle-right"></i></div>
+                <div class="slider-stream">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="overlay-bg-bege">
+        <div class="fundo-image" style="background-image: url('/codelab/image/gema.png');"></div>
+        <div class="container position-relative text-dark">
+            <div class="row text-center">
+                <h2 class="margin-bottom-text font-title">Premiações do GEMA!</h2>
+                <p class="text-dark">Vejam o que já ganhamos por aí;)</p>
+            </div>
+            <div class="row-medalhas">
+            </div>
+        </div>
+    </section>
+    <section class="overlay-bg-azul">
+        <div class="fundo-image" style="background-image: url('/codelab/image/binario.png');"></div>
+        <div class="container position-relative text-branco">
+            <div class="row text-center">
+                <h2 class="margin-bottom-text font-title">Embarque conosco!</h2>
+                <p class="text-bege">Fique conectado com o Gema!</p>
+            </div>
+            <div class="icones-media">
+                <div class="icones">
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row-footer">
+                <p>Gema - ICMC USP 2024</p>
+                <p>Desenvolvido pelo <a href="#">Codelab</a></p>
+            </div>
+        </div>
+    </footer>
+    <div id="overlayModal" class="overlay-back"></div>
+    <div class="modal" id="modalMedalha">
+    </div>
+    <script src="style.js"></script>
+</body>
+
+</html>
